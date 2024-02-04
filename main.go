@@ -53,6 +53,7 @@ func getUserAttack() int {
 	total := 0
 
 	for i := 0; i < 5; i++ {
+
 		inputAttack := input("Введи тип атаки: ")
 
 		var attackValue int
@@ -84,7 +85,7 @@ func runGame() bool {
 		fmt.Println("В этот раз не повезло :( Бой проигран.")
 	}
 	answer := input("Чтобы сыграть ещё раз, введи букву [y] или [Y]: ")
-	return answer == "Y"
+	return answer == "Y" || answer == "y"
 }
 
 func main() {
